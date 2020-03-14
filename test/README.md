@@ -6,8 +6,9 @@
 
 - use python 3.5 and above
 - make sure mysql is running on host
-- run  the test_data_creator script to get the mocking data and output comparison json.
-**Note:** The sql should be dumped in the local database)
+- run the test_data_creator script to get the mocking data and output comparison json.
+
+**Note:** The sql should be dumped in the local database
 ```
 cd app/test/resource/helper;
 python test_data_creator.py -d dbname
