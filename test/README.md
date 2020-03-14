@@ -7,8 +7,23 @@
 - use python 3.5 and above
 - make sure mysql is running on host
 - run the test_data_creator script to get the mocking data and output comparison json.
+- Prepare local data
+
+```
+mkdir -p data/input data/output data/scratch data/manifest
+```
+
+- Sample manifest files
+
+**Note:** Download the files to `data/input` folder from s3
+
+**file: data/manifest/manifest.txt**
+```
+../data/input/daily_m25_4u_2020-02-16_06h30m_Sunday.sql.gz
+```
 
 **Note:** The sql should be dumped in the local database
+**Note:** The above mentioned file is used in testing.
 ```
 cd app/test/resource/helper;
 python test_data_creator.py -d dbname
