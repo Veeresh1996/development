@@ -22,8 +22,10 @@ mkdir -p data/input data/output data/scratch data/manifest
 ../data/input/daily_m25_4u_2020-02-16_06h30m_Sunday.sql.gz
 ```
 
-**Note:** The sql should be dumped in the local database
-**Note:** The above mentioned file is used in testing.
+**Note:** 
+
+  - The sql should be dumped in the local database
+  - The above mentioned file is used in testing.
 ```
 cd app/test/resource/helper;
 python test_data_creator.py -d dbname
