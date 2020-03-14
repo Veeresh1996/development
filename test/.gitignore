@@ -1,0 +1,10 @@
+__pycache__
+.vscode
+.env
+tmp/
+docs/
+*.local
+*.env
+/data
+.DS_Store
+credentials

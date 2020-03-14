@@ -1,0 +1,15 @@
+
+2020-Mar-06:
+- default SQL_IMPORT_METHOD to "SYSCMD"
+- OUTPUT_SUBPATH uses dt= static column instead of year=.month=,day=
+- bugfix: get_input_paths shadowed variable fix.
+- moved pycmd, sycmd reusable code to separate func.
+
+2020-Mar-03:
+- duplicates columns => static columns and table columns conflict. 
+    FIX: all static columns now have "_" as prefix.
+- empty output files cannot create proper schema in glue catalog, hence athena query fails.
+    FIX: to not save empty tables.
+- sql import error.
+    FIX: moved to PYCMD/SYSCMD based mysql import.
+- documentation fixes
