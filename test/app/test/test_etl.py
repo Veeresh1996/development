@@ -46,7 +46,7 @@ class TestETL(TestCase):
 
         self.executer("../data/input/daily_m25_4u_2020-02-16_06h30m_Sunday.sql.gz")
     
-    @skip("SQL Syntax Error")
+    # @skip("SQL Syntax Error")
     def test_extract_rows_and_save_m25_ua(self):
 
         self.executer("../data/input/daily_m25_ua_2020-03-11_06h30m_Wednesday.sql.gz")
